@@ -35,7 +35,7 @@ ChurnPredict Pro uses a state-of-the-art Random Forest Classifier model to predi
   |![submit and pred](https://github.com/snyamson/P4-ChurnPredict-Pro/assets/58486437/275209cd-2bb4-4201-82bd-115df186a81d)        | ![pred](https://github.com/snyamson/P4-ChurnPredict-Pro/assets/58486437/b9193492-d28a-47df-9979-6f6d9ca8975f)                 |
 
 - ### Article Link 🌐
-  [Read Article](https://www.linkedin.com/pulse/churnpredict-pro-customer-churn-prediction-app-gradio-solomon-wolaf)
+  [Read Article](https://medium.com/@isaacrambo/predicting-customer-churn-with-machine-learning-building-an-interactive-web-app-with-gradio-8ea9152903e0)
 
 ## Getting Started 🏁
 
@@ -47,7 +47,7 @@ Follow these instructions to get the app up and running on your local machine.
 
    ```bash
    git clone https://github.com/fantastic-rambo/P4-Gradio-Customer-Churn-Machine-Learning-Web-App.git
-   cd P4-ChurnPredict-Pro
+   cd P4-Gradio-Customer-Churn-Machine-Learning-Web-App
    ```
 
 2. Create a virtual environment (optional but recommended):
