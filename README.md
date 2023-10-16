@@ -1,136 +1,107 @@
-# WELCOME TO MY GITHUB PAGE
+# ChurnPredict Pro - Real-time Customer Churn Prediction Web Application 📈📊
 
-![Time-Series-Forecasting-image](https://images.startups.co.uk/wp-content/uploads/2023/05/sales-forecast.jpg?width=709&height=460&fit=crop)
+ChurnPredict Pro is a powerful web application built on top of a Random Forest Classifier model, designed to predict customer churn. It provides businesses with real-time insights into customer retention and helps optimize customer management strategies 💼💰🤖
 
-Elevating Retail Analytics: Predicting Ecuador's Grocery Sales - The Favorita Forecasting Challenge!
+## Table of Contents 📚
 
+- [Introduction](#introduction) 📝
+- [Features](#features) ✨
+- [Demo](#demo) 🚀
+- [Getting Started](#getting-started) 🏁
+  - [Installation](#installation) 🛠️
+  - [Running the App](#running-the-app) 🏃
+- [App Structure](#app-structure) 🧱
+- [Usage](#usage) 📊
+  - [Making Predictions](#making-predictions) 📈
+- [Technologies Used](#technologies-used) 💻🔬
+- [Contributing](#contributing) 🤝🙌
+- [License](#license) 📜
 
+## Introduction 🚀
 
-# Time Series Forecasting Project
+ChurnPredict Pro uses a state-of-the-art Random Forest Classifier model to predict customer churn. It offers a user-friendly interface for inputting customer data and receiving instant churn predictions.
 
-Welcome to the exciting world of time series forecasting, where we embark on a journey to predict store sales for Favorita, one of Ecuador's largest and most prominent grocery retailers.
+## Features ✨
 
-In this data-driven project, we delve deep into the intricate art of predictive analytics, armed with historical sales data, cutting-edge machine learning techniques, and the drive to optimize the future of retail.
+- Real-time customer churn predictions.
+- Interactive user interface.
+- Easy-to-use design.
 
-## Project Overview
+## Demo 🚀
 
-This project follows the CRISP-DM (Cross-Industry Standard Process for Data Mining) framework to explore and analyze sales for store sales for Favorita. The aim is to leverage data-driven insights to identify models that can accurately predict the value of the dependent variable based on the values of the independent variables.
+- ### Pictures 📸
+  | ![app header](https://github.com/snyamson/P4-ChurnPredict-Pro/assets/58486437/75cac65c-9184-4660-8da6-95d4c81f7cc2) | ![more cus info](https://github.com/snyamson/P4-ChurnPredict-Pro/assets/58486437/26daa7ff-91dc-4a7a-af61-8ca376e2bb00) |
+  | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  |![submit and pred](https://github.com/snyamson/P4-ChurnPredict-Pro/assets/58486437/275209cd-2bb4-4201-82bd-115df186a81d)        | ![pred](https://github.com/snyamson/P4-ChurnPredict-Pro/assets/58486437/b9193492-d28a-47df-9979-6f6d9ca8975f)                 |
 
-## 📑 Table of Contents
+- ### Article Link 🌐
+  [Read Article](https://www.linkedin.com/pulse/churnpredict-pro-customer-churn-prediction-app-gradio-solomon-wolaf)
 
-- [Project Overview](#project-overview)
-- [Project Structure](#project-structure)
-- [Data Dictionary](#data-dictionary)
-- [Project Highlights](#project-highlights)
-- [Summary](#summary)
-- [Hypothesis Investigated](#hypothesis-investigated)
-  - [Results](#results)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-- [Model Selection](#model-selection)
-- [Recommendations](#recommendations)
-- [Getting Started](#getting-started)
-- [License](#license)
-- [Author](#author)
+## Getting Started 🏁
 
+Follow these instructions to get the app up and running on your local machine.
 
-## Project Structure📂
+### Installation 🛠️
 
-- `code/`: Contains the dataset used for analysis and the Jupyter notebook detailing the data exploration, preprocessing, and model building steps.
-- `article/`: Holds project-related article.
-- `LICENSE`: Project license.
-- `README.md`: Project overview, links, highlights, and information.
+1. Clone the repository:
 
-## Data Dictionary
+   ```bash
+   git clone https://github.com/snyamson/P4-ChurnPredict-Pro.git
+   cd P4-ChurnPredict-Pro
+   ```
 
-| **Dataset** | **Description** |
-|------------|-----------------|
-| train.csv  | Training data containing time series of features store_nbr, family, and onpromotion, as well as the target sales. |
-|            | - `store_nbr`: Identifies the store where the products are sold. |
-|            | - `family`: Identifies the type of product sold. |
-|            | - `sales`: Total sales for a product family at a specific store on a given date (can be fractional). |
-|            | - `onpromotion`: Total number of items in a product family that were being promoted at a store on a given date. |
-| test.csv   | Test data with the same features as the training data. Predict target sales for these dates. |
-| transaction.csv | Contains date, store_nbr, and transactions made on specific dates. |
-| sample_submission.csv | Sample submission file in the correct format. |
-| stores.csv | Store metadata, including city, state, type, and cluster. |
-|            | - `cluster`: Grouping of similar stores. |
-| oil.csv    | Daily oil price data, including values during both the train and test data timeframes. |
-| holidays_events.csv | Holidays and events data, with metadata. |
+2. Create a virtual environment (optional but recommended):
 
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
 
-# Project Highlights🚀
+3. Install the required dependencies:
 
-- Employed a holistic approach, embracing the CRISP-DM framework, to gain a deep understanding of retail dynamics.
-- Mined invaluable insights from extensive exploratory data analysis, unveiling hidden trends and patterns within the dataset.
-- Engineered advanced predictive models, featuring the formidable XGBoost algorithm, to forecast sales with unprecedented accuracy.
-- Implemented rigorous hyperparameter tuning, unlocking the full potential of our models and achieving unparalleled predictive performance.
-- Crafted a compelling and informative article, sharing the project's compelling journey, groundbreaking results, and its potential to reshape the future of retail forecasting.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Summary
+### Running the App 🏃
 
-| Code | Name                                     |                                             Published Article                                              |                                                                                                                                                    Deployed Dashboard |
-| ---- | ---------------------------------------- | :--------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| LP3  | Sales Time Series Forecasting(Prediction)| [Read Article](https://medium.com/@isaacrambo/revealing-the-power-of-time-series-forecasting-predicting-ecuadors-grocery-sales-with-precision-8c3b0bac97be) | [View Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZjY1ZjkxYjktYjhkNy00OWRmLTkyM2QtZWVjMTVhMmY2ZTczIiwidCI6IjQ0ODdiNTJmLWYxMTgtNDgzMC1iNDlkLTNjMjk4Y2I3MTA3NSJ9) |
+Run the Gradio app using the following command:
 
-## Hypothesis Investigated
+```bash
+python src/app/app.py
+```
 
-**Null Hypothesis (H0)** : The number of products under promotion does not influence sales in supermarkets.
+Access the app through your web browser at `http://localhost:7860`.
 
-**Alternate Hypothesis (H1)** : The number of products under promotion significantly influence sales in supermarkets.
+## App Structure 🧱
 
-## Rationale
+- `src`: The main application directory.
+- `app/`: Directory containing the main application script `app.py`.
+- `model/`: Directory for storing the pre-trained Random Forest Classifier model and preprocessing tools.
+- `notebook/`: Directory containing data preprocessing details and model training.
 
-The rationale for testing these hypotheses is to determine whether there is empirical evidence to support the idea that promotions have a meaningful impact on sales in supermarkets.
+## Usage 📊
 
-By testing these hypotheses and examining the correlation between promotions and sales, businesses can gain valuable insights into the dynamics of supermarket sales and make evidence-based decisions regarding their promotional strategies.
+### Making Predictions 📈
 
+1. Fill in the customer data in the required fields.
+2. Click the "Submit" button to receive a real-time churn prediction.
 
-### Results
+## Technologies Used 💻🔬
 
-| Test Conducted               | Pearson Correlation     | P-Value                |
-| ---------------------------- | ------------------ | ---------------------- |
-| Independent Samples T - Test | 0.4180 | 0.0000 |
+- Gradio: Python library for building interactive interfaces.
+- Pandas: Data manipulation and analysis library.
+- Scikit-Learn: Machine learning library.
 
-In conclusion, the Pearson correlation coefficient calculated between the number of products under promotion (as indicated by the "onpromotion" column) and sales in supermarkets is approximately 0.4180. The corresponding p-value obtained from the correlation analysis is very close to zero (P-value: 0.0000). Based on the results of this analysis, we reject the null hypothesis.
+## Contributing 🤝🙌
 
-There is a statistically significant positive correlation (Pearson Correlation Coefficient = 0.4180) between the number of products under promotion and sales in supermarkets. This suggests that promotions have a significant influence on sales, and as the number of products under promotion increases, sales tend to increase as well.
+Contributions to the ChurnPredict Pro project are welcome. Please follow these guidelines for contributing:
 
-
-
-## Exploratory Data Analysis (EDA)📊
-
-
-A snapshot of the conducted exploratory data analysis, aimed at addressing pivotal business inquiries during the analysis process.
-
-| ![storesbytype](https://github.com/snyamson/LP3-Super-Store-Time-Series-Forecasting/assets/58486437/dae0298b-2477-4772-a650-31a74b839266)         | ![storesbystate](https://github.com/snyamson/LP3-Super-Store-Time-Series-Forecasting/assets/58486437/549cf603-45e6-43a6-9304-760c36c5f324)       |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ![oil trend](https://github.com/snyamson/LP3-Super-Store-Time-Series-Forecasting/assets/58486437/468f4fe4-84d4-4e7a-a58a-d85739646a49) | ![newplot](https://github.com/snyamson/LP3-Super-Store-Time-Series-Forecasting/assets/58486437/79b272b7-319c-48de-901c-467ca57b9a78) |
-
-## Model Selection
-
-
-![modelse](https://github.com/snyamson/LP3-Super-Store-Time-Series-Forecasting/assets/58486437/bb9e2da1-46cf-4dd2-91a7-94acf7f070ff)
-After carefully assessing the performance of our models using key evaluation metrics, it is evident that the XGBoost model stands out as the most effective choice for our dataset. The RMSLE (Root Mean Squared Logarithmic Error) serves as a crucial indicator, and the XGBoost model achieved the lowest RMSLE of 0.0054 among all models evaluated. This indicates that the XGBoost model provides the most accurate and precise predictions when compared to ARIMA, SARIMA, and ETS models.
-
-Therefore, for this specific forecasting task, we are adopting the XGBoost model for its superior predictive accuracy.
-
-
-## Recommendations
-
-1. **Promotion Optimization:** Based on the analysis of the impact of promotions on sales, consider optimizing promotion strategies. Identify which types of promotions (e.g., discounts, BOGO offers) have the most significant influence on sales and tailor promotional campaigns accordingly. By focusing promotional efforts on what truly drives sales, you can maximize the return on investment.
-
-2. **Focus on High-Performing Cities**: The top-performing city, "Quito," stands out with the highest sales. It's essential to allocate additional resources and marketing efforts to maintain and potentially increase sales in Quito. Additionally, cities like "Guayaquil," "Cuenca," "Ambato," and "Santo Domingo" have also shown strong sales performance. Consider developing city-specific strategies to capitalize on these markets.
-
-3. **Cluster-Centric Approach**: The analysis reveals that certain clusters, such as "Cluster 14," "Cluster 6," and "Cluster 8," exhibit remarkable sales figures. Invest in understanding the unique characteristics of these clusters and tailor product assortments, promotions, and inventory management strategies to maximize sales potential in these areas.
-
-4. **Cross-Analysis Opportunities**: Explore opportunities to combine the strengths of high-performing cities, clusters, store types, and states. For example, consider aligning promotions with holidays and events in top cities and clusters to maximize sales impact. Additionally, assess whether specific store types thrive in particular cities or clusters, and use this information to refine expansion plans.
-
-## Getting Started🏁
-
-1. Clone this repository: `git clone https://github.com/fantastic-rambo/LP3-Super-Store-Sales-Forecasting-ML.git`
-2. Navigate to the project directory: `LP3-Super-Store-Time-Series-Forecasting`
-3. Explore the Jupyter notebooks for detailed steps and code execution.
-4. Read the published article for a comprehensive understanding of the project.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`
+3. Make your changes and commit them with clear, concise commit messages.
+4. Push your changes to your fork.
+5. Create a pull request against the main repository.
 
 ## License📜
 
@@ -138,9 +109,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Author✍️
 
-Isaac Agbogah Rambo
+Solomon Nyamson
 
-Connect with me on LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/isaac-agbogah/)
+Connect with me on LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/solomon-nyamson/)
 
 ---
 
