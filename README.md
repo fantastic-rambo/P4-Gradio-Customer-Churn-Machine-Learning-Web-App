@@ -46,7 +46,7 @@ Follow these instructions to get the app up and running on your local machine.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/snyamson/P4-ChurnPredict-Pro.git
+   git clone https://github.com/fantastic-rambo/P4-Gradio-Customer-Churn-Machine-Learning-Web-App.git
    cd P4-ChurnPredict-Pro
    ```
 
@@ -71,7 +71,7 @@ Run the Gradio app using the following command:
 python src/app/app.py
 ```
 
-Access the app through your web browser at `http://localhost:7860`.
+Access the app through your web browser at `http://127.0.0.1:7860/`.
 
 ## App Structure 🧱
 
@@ -109,9 +109,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Author✍️
 
-Solomon Nyamson
+Isaac Agbogah(Fantastic Rambo)
 
-Connect with me on LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/solomon-nyamson/)
+Connect with me on LinkedIn: [LinkedIn Profile]((https://www.linkedin.com/in/isaac-agbogah/)
 
 ---
 
